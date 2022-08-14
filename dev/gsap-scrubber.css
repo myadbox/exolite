@@ -1,0 +1,20 @@
+.gs-dev-tools {
+  z-index: 999;
+}
+
+.gs-dev-tools .gs-bottom,
+.gs-dev-tools .gs-top {
+  background-color: hsla(218, 30%, 10%, 0.6) !important;
+  backdrop-filter: invert(0.2);
+}
+
+.gs-dev-tools .playhead {
+  border: 1px solid hsla(214, 15%, 40%, 0.6) !important;
+  background-color: hsla(211, 25%, 78%, 1) !important;
+}
+.gs-dev-tools .timeline-track {
+  background-color: hsla(214, 15%, 40%, 0.8) !important;
+}
+.gs-dev-tools .progress-bar {
+  background-color: hsla(214, 20%, 69%, 1) !important;
+}

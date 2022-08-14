@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  style="
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    visibility: visible;
+    background-color: transparent !important;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  "
+>
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./dev/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Sesimi template development</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      max-height: 100vh;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: transparent !important;
+    "
+  >
+    <div id="root" style="display: contents"></div>
+    <script type="module" src="./dev/App.jsx"></script>
   </body>
 </html>
