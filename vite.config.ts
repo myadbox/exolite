@@ -10,4 +10,7 @@ export default defineConfig({
       TEMPLATE: `./src`,
     },
   },
+  optimizeDeps: {
+    exclude: ['@myadbox/exoplanet-toolkit'],
+  },
 })
