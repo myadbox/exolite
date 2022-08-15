@@ -1,5 +1,7 @@
 // @ts-check
 /// <reference types="@myadbox/exoplanet-toolkit/src/types/global"/>
+/// <reference types="@myadbox/exoplanet-toolkit/src/types/vendor"/>
+
 import * as React from 'react'
 import { Body, useTemplate, useAnimation } from '@myadbox/exoplanet-toolkit'
 import reactLogo from './img/react.svg'
@@ -16,6 +18,8 @@ const Template = (/** @type TemplateProps */ props) => {
       }}
       backdropStyle={{
         backgroundColor: `var(--midnight-forest)`,
+        backgroundImage: `radial-gradient(hsla(74deg, 100%, 62%, .15) 2%, hsla(186deg, 88%, 9%, .4) 100%)`,
+        backgroundBlendMode: `overlay`,
       }}
     >
       {/* --- TEMPLATE CONTAINER --- */}
@@ -42,6 +46,7 @@ const Template = (/** @type TemplateProps */ props) => {
                 color: `var(--electric-lime)`,
                 textTransform: `lowercase`,
                 fontWeight: `400`,
+                filter: `drop-shadow(0 0 7px currentColor)`,
               }}
             >
               {title.brand}
@@ -54,7 +59,10 @@ const Template = (/** @type TemplateProps */ props) => {
             src={reactLogo}
             alt="React"
             width="80"
-            style={{ display: `inline-block`, opacity: 0.1 }}
+            style={{
+              display: `inline-block`,
+              opacity: 0.1,
+            }}
           />
         </div>
       </div>

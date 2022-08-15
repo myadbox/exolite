@@ -5,16 +5,28 @@
 /** @type ExoAnimation */
 
 const animation = (gsap) => {
-  const globalTimeline = gsap
+  const templateTimeline = gsap
     .timeline({ id: `template` })
     .fromTo(
       `#reactLogo`,
       { rotation: 0 },
-      { duration: 4, rotation: 360, ease: `linear` }
+      { duration: 8, repeat: 20, rotation: 360, ease: `linear` }
+    )
+    .fromTo(
+      `#reactLogo`,
+      { opacity: 0.05 },
+      {
+        duration: 4,
+        repeat: 40,
+        yoyo: true,
+        opacity: 0.25,
+        ease: `Power1.easeIn`,
+      },
+      `<`
     )
 
-  console.log(`Animation duration: ` + globalTimeline.totalDuration())
-  return globalTimeline
+  // always return the main timeline
+  return templateTimeline
 }
 
 export default animation
