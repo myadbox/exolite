@@ -1,12 +1,16 @@
+// @ts-check
+/// <reference types="@myadbox/exoplanet-toolkit/src/types/global"/>
 import * as React from 'react'
-import { Body, useTemplate } from '@myadbox/exoplanet-toolkit'
+import { Body, useTemplate, useAnimation } from '@myadbox/exoplanet-toolkit'
 import reactLogo from './img/react.svg'
 
-const Template = (props) => {
-  // Ensure props match those in values and config fields
+const Template = (/** @type TemplateProps */ props) => {
+  // Ensure props you destructure from useTemplate match those in data/values.mjs and data/config.mjs `fields`.
   const { title } = useTemplate(props)
+  const animation = useAnimation(props)
   return (
     <Body
+      animation={animation}
       style={{
         color: `white`,
       }}
@@ -46,6 +50,7 @@ const Template = (props) => {
           </h1>
           <p>with React and JSX</p>
           <img
+            id="reactLogo"
             src={reactLogo}
             alt="React"
             width="80"
