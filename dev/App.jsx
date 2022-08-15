@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import queryString from 'query-string'
 import 'lazysizes'
 import 'lazysizes/plugins/attrchange/ls.attrchange'
@@ -12,8 +12,9 @@ import values from '../src/data/values.mjs'
 const pageRequest = queryString.parse(location.search)?.page
 
 const mount = ({ default: Template }) => {
-  ReactDOM.createRoot(document.getElementById('root')).render(
-    <Template libs={{ gsap, GSDevTools }} localeValues={values} />
+  ReactDOM.render(
+    <Template libs={{ gsap, GSDevTools }} localeValues={values} />,
+    document.getElementById(`root`)
   )
 }
 
