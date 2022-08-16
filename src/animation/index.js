@@ -1,4 +1,5 @@
 // @ts-check
+/// <reference types="@myadbox/exoplanet-toolkit/types"/>
 
 /** @type ExoAnimation */
 const animation = (gsap) => {

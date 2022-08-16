@@ -1,4 +1,6 @@
 // @ts-check
+/// <reference types="@myadbox/exoplanet-toolkit/types"/>
+
 import * as React from 'react'
 import { Body, useTemplate, useAnimation } from '@myadbox/exoplanet-toolkit'
 import reactLogo from './img/react.svg'

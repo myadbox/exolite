@@ -23,8 +23,5 @@
     "./**/*.d.ts",
     "./**/*.mjs"
   ],
-  "exclude": ["node_modules", "./dist"],
-  "files": [
-    "node_modules/@myadbox/exoplanet-toolkit/vendor/gsap/types/index.d.ts"
-  ]
+  "exclude": ["node_modules", "./dist"]
 }
