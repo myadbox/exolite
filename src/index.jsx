@@ -1,12 +1,13 @@
 // @ts-check
-/// <reference types="@myadbox/exoplanet-toolkit/types"/>
-
 import * as React from 'react'
 import { Body, useTemplate, useAnimation } from '@myadbox/exoplanet-toolkit'
 import reactLogo from './img/react.svg'
 
-const Template = (/** @type TemplateProps */ props) => {
-  // Ensure props you destructure from useTemplate match those in data/values.mjs and data/config.mjs `fields`.
+/** @type ExoTemplate */
+
+const Template = (props) => {
+  // Ensure that props you destructure from useTemplate match those found in
+  // data/values.mjs and data/config.mjs `fields`.
   const { title } = useTemplate(props)
   const animation = useAnimation(props)
   return (

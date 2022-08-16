@@ -1,3 +1,5 @@
+/// <reference types="@myadbox/exoplanet-toolkit/types"/>
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import queryString from 'query-string'
