@@ -1,6 +1,5 @@
 // @ts-check
-/// <reference types="@myadbox/exoplanet-toolkit/src/types/global"/>
-/// <reference types="@myadbox/exoplanet-toolkit/vendor/gsap/types"/>
+/// <reference types="@myadbox/exoplanet-toolkit/types"/>
 
 /** @type ExoAnimation */
 

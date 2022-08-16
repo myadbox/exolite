@@ -1,6 +1,5 @@
 // @ts-check
-/// <reference types="@myadbox/exoplanet-toolkit/src/types/global"/>
-/// <reference types="@myadbox/exoplanet-toolkit/src/types/vendor"/>
+/// <reference types="@myadbox/exoplanet-toolkit/types"/>
 
 import * as React from 'react'
 import { Body, useTemplate, useAnimation } from '@myadbox/exoplanet-toolkit'
