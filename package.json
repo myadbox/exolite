@@ -4,10 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "postinstall": "npm run dev",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "npm run dev",
+    "dev": "vite"
   },
   "dependencies": {
     "@myadbox/exoplanet-toolkit": "^1.0.1",
