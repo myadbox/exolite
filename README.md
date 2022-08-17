@@ -2,7 +2,7 @@
 
 Exolite is a Vite template used to bootstrap new Sesimi templates.
 
-<img width="1226" alt="Screen Shot 2022-08-13 at 11 54 08 am" src="https://user-images.githubusercontent.com/75602/185010306-04d03d7e-ff9f-477f-a20d-477cae7e1394.png">
+<img width="1630" alt="Screen Shot 2022-08-17 at 11 02 41 am" src="https://user-images.githubusercontent.com/75602/185011381-298e27f6-1c97-4a5f-a7de-6e84db3e62a7.png">
 
 ## Getting Started
 
