@@ -5,18 +5,22 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "npx @myadbox/exoplanet-deployment deploy"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.1",
+    "@myadbox/exoplanet-toolkit": "^1.0.5",
     "lazysizes": "^5.3.2",
     "react": "^17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@myadbox/exoplanet-deployment": "^0.1.1",
     "@myadbox/nebula-template-utils": "0.0.74",
+    "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
     "@vitejs/plugin-react": "^2.0.1",
+    "hucssley": "github:stowball/hucssley",
     "query-string": "^7.1.1",
     "vite": "^3.0.6"
   }

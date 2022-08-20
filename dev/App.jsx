@@ -6,7 +6,7 @@ import 'lazysizes/plugins/attrchange/ls.attrchange'
 import { gsap } from '@myadbox/exoplanet-toolkit/vendor/gsap'
 import { GSDevTools } from '@myadbox/exoplanet-toolkit/vendor/gsap/GSDevTools'
 import './gsap-scrubber.css'
-import '../src/index.css'
+import '../src/styles/index.scss'
 import values from '../src/data/values.mjs'
 
 const pageRequest = queryString.parse(location.search)?.page
