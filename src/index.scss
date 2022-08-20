@@ -24,6 +24,11 @@
 }
 
 /*! purgecss start ignore */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 3em;
   line-height: 1.1;
