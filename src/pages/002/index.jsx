@@ -13,7 +13,7 @@ const Template = (props) => {
   // Ensure that props you destructure from useTemplate match those found in
   // data/values.mjs and data/config.mjs `fields`.
   const {
-    baseUrl,
+    root,
     page: { start, brand, end },
   } = useTemplate({ page, ...props })
 
@@ -24,7 +24,7 @@ const Template = (props) => {
       }}
       backdropStyle={{
         backgroundColor: `var(--midnight-forest)`,
-        backgroundImage: `radial-gradient(hsla(74deg, 100%, 62%, .15) 2%, hsla(186deg, 88%, 9%, .4) 100%)`,
+        backgroundImage: `radial-gradient(hsla(74deg, 100%, 62%, .5) 2%, hsla(186deg, 88%, 9%, .4) 100%)`,
         backgroundBlendMode: `overlay`,
       }}
     >
@@ -46,7 +46,7 @@ const Template = (props) => {
             <img
               id="reactLogo"
               // for static (non-Sesimi assets) local images above 5KB use the following syntax:
-              src={`${baseUrl}/img/react.svg`}
+              src={`${root}/img/react.svg`}
               alt="React"
               width="80"
               style={{
