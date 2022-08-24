@@ -14,4 +14,5 @@ export default defineConfig({
   }),
   defaultSize: allSizes.social.facebook.main.sizes.story.label,
   formats: allFormats.web.static,
+  fields: [],
 })
