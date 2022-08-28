@@ -8,14 +8,15 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "vite",
-    "build": "npx @myadbox/exoplanet-deployment deploy"
+    "build": "deploy"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.11",
+    "@myadbox/exoplanet-toolkit": "^1.0.13",
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
-    "@myadbox/nebula-template-utils": "0.0.74",
+    "@myadbox/exoplanet-deployment": "^0.1.9",
+    "@myadbox/nebula-template-utils": "0.0.76",
     "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
     "@vitejs/plugin-react": "^2.0.1",
