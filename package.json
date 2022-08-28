@@ -11,11 +11,11 @@
     "build": "deploy"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.13",
+    "@myadbox/exoplanet-toolkit": "^1.0.14",
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
-    "@myadbox/exoplanet-deployment": "^0.1.9",
+    "@myadbox/exoplanet-deployment": "^0.1.10",
     "@myadbox/nebula-template-utils": "0.0.76",
     "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
