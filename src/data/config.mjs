@@ -1,4 +1,3 @@
-// @ts-check
 import {
   allFormats,
   allSizes,
@@ -9,10 +8,10 @@ import {
 export default defineConfig({
   sizes: embedSizes({
     support: {
-      categories: [allSizes.social.facebook.main],
+      categories: [allSizes.bannerAd.main],
     },
   }),
-  defaultSize: allSizes.social.facebook.main.sizes.story.label,
+  defaultSize: allSizes.bannerAd.main.sizes.halfPageAd.label,
   formats: allFormats.web.static,
   fields: [],
 })

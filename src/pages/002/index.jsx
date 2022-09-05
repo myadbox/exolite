@@ -29,16 +29,13 @@ const Template = (props) => {
       }}
       backdropStyle={{
         backgroundColor: `var(--midnight-forest)`,
-        backgroundImage: `radial-gradient(
-          hsla(74deg, 100%, 62%, .5) 2%,
-          hsla(186deg, 88%, 9%, .4) 100%
-        )`,
+        backgroundImage: `radial-gradient(hsla(74deg, 100%, 62%, .5) 2%, hsla(186deg, 88%, 9%, .4) 100%)`,
         backgroundBlendMode: `overlay`,
       }}
     >
       <Wrapper>
         <Title start={start} brand={brand} end={end} />
-        <p>with React and CSS</p>
+        <p>with React and CSS</p>
         <img
           id="reactLogo"
           // images under 5KB can be imported directly (see top of this file) and will be

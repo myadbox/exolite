@@ -1,0 +1,40 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  role="img"
+>
+  <title>Sesimi</title>
+
+  <style>
+    :root {
+      --logo-color: #d1ff3b;
+    }
+
+    @media (prefers-color-scheme:light){
+      :root{
+        --logo-color: #172a30;
+      }
+    }
+  </style>
+  <g style="fill: var(--logo-color, #d1ff3b)">
+    <rect
+      style="transitionDelay: 0.04s"
+      width="19.44"
+      height="100"
+    ></rect>
+    <polygon
+      style="transitionDelay: 0.05s"
+      points="41.67 0 61.11 0 38.89 100 19.44 100 41.67 0"
+    ></polygon>
+    <polygon
+      style="transitionDelay: 0.1s"
+      points="61.11 0 80.56 0 69.44 100 50 100 61.11 0"
+    ></polygon>
+    <rect
+      style="transitionDelay: 0.15s"
+      x="80.56"
+      width="19.44"
+      height="100"
+    ></rect>
+  </g>
+</svg>

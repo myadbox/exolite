@@ -1,12 +1,11 @@
+// @ts-check
 import * as React from 'react'
 
-import './index.css'
-
-export const Wrapper = ({ children, ...props }) => {
+export const Wrapper = ({ children, className = ``, style = {}, ...props }) => {
   return (
     <div
       {...props}
-      className={`wrapper`}
+      className={`wrapper ${className}`}
       style={{
         display: `grid`,
         gap: `1em`,
@@ -16,6 +15,7 @@ export const Wrapper = ({ children, ...props }) => {
         placeItems: `center`,
         textAlign: `center`,
         width: `calc(100vw - 4em)`,
+        ...style,
       }}
     >
       {children}
