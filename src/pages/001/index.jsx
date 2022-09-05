@@ -2,11 +2,14 @@
 /// <reference types="@myadbox/exoplanet-toolkit/types"/>
 
 import * as React from 'react'
-import { Body, useTemplate, useAnimation } from '@myadbox/exoplanet-toolkit'
+import {
+  Body,
+  useTemplate /*, useAnimation*/,
+} from '@myadbox/exoplanet-toolkit'
 import page from './data/values.mjs'
 import reactLogo from '../../img/react.svg'
-import Title from '../../components/Title'
-import Wrapper from '../../components/Wrapper'
+import Title from '../../components/Title/Title'
+import Wrapper from '../../components/Wrapper/Wrapper'
 
 /** @type ExoTemplate */
 
@@ -16,11 +19,11 @@ const Template = (props) => {
   const {
     page: { start, brand, end },
   } = useTemplate({ page, ...props })
-  const animation = useAnimation(props)
+  // const animation = useAnimation(props)
 
   return (
     <Body
-      animation={animation}
+      // animation={animation}
       style={{
         color: `white`,
       }}
@@ -30,41 +33,24 @@ const Template = (props) => {
         backgroundBlendMode: `overlay`,
       }}
     >
-      {/* --- TEMPLATE CONTAINER --- */}
-      <div
-        style={{
-          width: `100vw`,
-          height: `100vh`,
-          display: `grid`,
-          placeContent: `center`,
-          textAlign: `center`,
-        }}
-        className={`
-          display:grid
-        `}
-      >
-        {/* --- TITLE --- */}
-        <Wrapper>
-          <Title start={start} brand={brand} end={end} />
-          <p>with React and JSX</p>
-          <div>
-            <img
-              id="reactLogo"
-              // images under 5KB can be imported directly (see top of this file) and will be
-              // inlined as Base64 with the template js file
-              src={reactLogo}
-              // for static (non-Sesimi assets) local images above 5KB use the following syntax:
-              // src={`${root}/img/react.svg`}
-              alt="React"
-              width="80"
-              style={{
-                display: `inline-block`,
-                opacity: 0.1,
-              }}
-            />
-          </div>
-        </Wrapper>
-      </div>
+      <Wrapper>
+        <Title start={start} brand={brand} end={end} />
+        <p>with React and CSS</p>
+        <img
+          id="reactLogo"
+          // images under 5KB can be imported directly (see top of this file) and will be
+          // inlined as Base64 with the template js file
+          src={reactLogo}
+          // for static (non-Sesimi assets) local images above 5KB use the following syntax:
+          // src={`${root}/img/react.svg`}
+          alt="React"
+          width="80"
+          style={{
+            opacity: `0.2`,
+            width: `min(12vmax, 5.5em)`,
+          }}
+        />
+      </Wrapper>
     </Body>
   )
 }

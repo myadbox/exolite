@@ -1,0 +1,5 @@
+@media (min-aspect-ratio: 10/4) {
+  .wrapper {
+    grid-auto-flow: column;
+  }
+}
