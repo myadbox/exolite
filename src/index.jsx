@@ -1,13 +1,17 @@
+// @ts-check
 import * as React from 'react'
 import { CornerFold } from '@myadbox/exoplanet-toolkit'
 import Page from './pages/001'
-import initialPage from './pages/001/data/values.mjs'
+import page from './pages/001/data/values.mjs'
+
+const isMultipage = false
+const Wrapper = isMultipage ? CornerFold : React.Fragment
 
 const Template = (props) => {
   return (
-    <CornerFold to="/?page=001">
-      <Page {...{ page: initialPage, ...props, cancelAnimation: true }} />
-    </CornerFold>
+    <Wrapper to="/?page=001">
+      <Page {...{ page, ...props, cancelAnimation: true }} />
+    </Wrapper>
   )
 }
 

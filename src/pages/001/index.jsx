@@ -12,7 +12,6 @@ import Title from '../../components/Title/Title'
 import Wrapper from '../../components/Wrapper/Wrapper'
 
 /** @type ExoTemplate */
-
 const Template = (props) => {
   // Ensure that props you destructure from useTemplate match those found in
   // data/values.mjs and data/config.mjs `fields`.
