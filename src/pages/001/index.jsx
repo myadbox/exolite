@@ -43,7 +43,7 @@ const Template = (props) => {
           // images under 5KB can be imported directly (see top of this file) and will be
           // inlined as Base64 with the template js file
           src={reactLogo}
-          // for static (non-Sesimi assets) local images above 5KB use the following syntax:
+          // for static (non-Sesimi assets) local images above 5KB when optimised, use the following syntax:
           // src={`${root}/img/react.svg`}
           alt="React"
           width="80"
