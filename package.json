@@ -1,7 +1,7 @@
 {
   "name": "@myadbox/exolite",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "author": "Sesimi R&D",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -17,8 +17,10 @@
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
+    "@myadbox/eslint-config-exoplanet": "^1.0.2",
     "@myadbox/exoplanet-deployment": "^0.1.11",
     "@myadbox/nebula-template-utils": "0.0.76",
+    "@myadbox/prettier-config-exoplanet": "^1.0.2",
     "@types/node": "^18.7.6",
     "@types/react": "^17.0.39",
     "@vitejs/plugin-react": "^2.0.1",
@@ -27,5 +29,12 @@
     "react-dom": "^17.0.2",
     "replace": "^1.2.1",
     "vite": "^3.0.6"
-  }
+  },
+  "prettier": "@myadbox/prettier-config-exoplanet",
+  "eslintConfig": {
+    "extends": "@myadbox/eslint-config-exoplanet"
+  },
+  "eslintIgnore": [
+    "animation/lib/**/*"
+  ]
 }
