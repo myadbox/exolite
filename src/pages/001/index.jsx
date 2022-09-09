@@ -2,10 +2,7 @@
 /// <reference types="@myadbox/exoplanet-toolkit/types"/>
 
 import * as React from 'react'
-import {
-  Body,
-  useTemplate /*, useAnimation*/,
-} from '@myadbox/exoplanet-toolkit'
+import {Body, useTemplate /*, useAnimation*/} from '@myadbox/exoplanet-toolkit'
 import page from './data/values.mjs'
 import reactLogo from '../../img/react.svg'
 import Title from '../../components/Title/Title'
@@ -16,8 +13,8 @@ const Template = (props) => {
   // Ensure that props you destructure from useTemplate match those found in
   // data/values.mjs and data/config.mjs `fields`.
   const {
-    page: { start, brand, end },
-  } = useTemplate({ page, ...props })
+    page: {start, brand, end},
+  } = useTemplate({page, ...props})
   // const animation = useAnimation(props)
 
   return (

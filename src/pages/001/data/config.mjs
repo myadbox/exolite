@@ -1,5 +1,5 @@
 // @ts-check
-import { createField } from '@myadbox/nebula-template-utils'
+import {createField} from '@myadbox/nebula-template-utils'
 
 export default {
   fields: [
