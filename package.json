@@ -11,6 +11,16 @@
     "build": "deploy",
     "setup": "npm install && node --experimental-json-modules dev/rename.mjs && npx install-peerdeps --dev @myadbox/eslint-config-exoplanet"
   },
+  "engines": {
+    "node": ">=16.0"
+  },
+  "repository": {
+    "url": "https://github.com/myadbox/exolite",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/myadbox/exolite/issues"
+  },
   "dependencies": {
     "@myadbox/exoplanet-toolkit": "^1.0.15",
     "lazysizes": "^5.3.2"
