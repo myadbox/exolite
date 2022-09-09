@@ -1,7 +1,7 @@
 {
   "name": "@myadbox/exolite",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.7",
   "type": "module",
   "author": "Sesimi R&D",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -9,7 +9,8 @@
     "start": "npm run dev",
     "dev": "vite",
     "build": "deploy",
-    "setup": "npm install && node --experimental-json-modules dev/rename.mjs && npx install-peerdeps --dev @myadbox/eslint-config-exoplanet"
+    "setup": "npm install && node --experimental-json-modules dev/rename.mjs && npm run update-eslint",
+    "update-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet"
   },
   "engines": {
     "node": ">=16.0"
@@ -26,7 +27,7 @@
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
-    "@myadbox/eslint-config-exoplanet": "^1.0.4",
+    "@myadbox/eslint-config-exoplanet": "^1.0.5",
     "@myadbox/exoplanet-deployment": "^0.1.12",
     "@myadbox/nebula-template-utils": "^0.0.76",
     "@myadbox/prettier-config-exoplanet": "^1.0.4",
@@ -41,6 +42,7 @@
   },
   "prettier": "@myadbox/prettier-config-exoplanet",
   "eslintConfig": {
+    "root": true,
     "extends": "@myadbox/eslint-config-exoplanet"
   },
   "eslintIgnore": [
