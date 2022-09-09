@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@myadbox/eslint-config-exoplanet": "^1.0.4",
-    "@myadbox/exoplanet-deployment": "^0.1.11",
+    "@myadbox/exoplanet-deployment": "^0.1.12",
     "@myadbox/nebula-template-utils": "^0.0.76",
     "@myadbox/prettier-config-exoplanet": "^1.0.4",
     "@types/node": "^18.7.6",
