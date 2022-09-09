@@ -35,6 +35,8 @@
     "extends": "@myadbox/eslint-config-exoplanet"
   },
   "eslintIgnore": [
-    "animation/lib/**/*"
+    "src/animation/lib/**/*",
+    "node_modules",
+    "dist"
   ]
 }

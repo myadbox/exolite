@@ -4,15 +4,11 @@
 /** @type ExoAnimation */
 const animation = (gsap) => {
   const templateTimeline = gsap
-    .timeline({ id: `template` })
+    .timeline({id: `template`})
+    .fromTo(`#reactLogo`, {rotation: 0}, {duration: 8, repeat: 20, rotation: 360, ease: `linear`})
     .fromTo(
       `#reactLogo`,
-      { rotation: 0 },
-      { duration: 8, repeat: 20, rotation: 360, ease: `linear` }
-    )
-    .fromTo(
-      `#reactLogo`,
-      { opacity: 0.05 },
+      {opacity: 0.05},
       {
         duration: 4,
         repeat: 40,

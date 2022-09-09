@@ -1,7 +1,7 @@
 // @ts-check
 import * as React from 'react'
 
-export const Wrapper = ({ children, className = ``, style = {}, ...props }) => {
+export const Wrapper = ({children, className = ``, style = {}, ...props}) => {
   return (
     <div
       {...props}

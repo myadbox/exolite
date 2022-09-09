@@ -4,27 +4,27 @@ import { createField } from '@myadbox/nebula-template-utils'
 export default {
   fields: [
     createField.text({
-      name: 'start',
+      name: `start`,
       maxLength: 30,
       required: true,
       options: {
-        label: 'Start',
+        label: `Start`,
       },
     }),
     createField.text({
-      name: 'brand',
+      name: `brand`,
       maxLength: 30,
       required: true,
       options: {
-        label: 'Brand',
+        label: `Brand`,
       },
     }),
     createField.text({
-      name: 'end',
+      name: `end`,
       maxLength: 30,
       required: true,
       options: {
-        label: 'End',
+        label: `End`,
       },
     }),
   ],

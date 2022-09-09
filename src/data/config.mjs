@@ -1,9 +1,4 @@
-import {
-  allFormats,
-  allSizes,
-  defineConfig,
-  embedSizes,
-} from '@myadbox/nebula-template-utils'
+import {allFormats, allSizes, defineConfig, embedSizes} from '@myadbox/nebula-template-utils'
 
 export default defineConfig({
   sizes: embedSizes({

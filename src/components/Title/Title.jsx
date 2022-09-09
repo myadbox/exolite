@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export const Title = ({ start = ``, brand = ``, end = `` }) => {
+export const Title = ({start = ``, brand = ``, end = ``}) => {
   return (
     <h1
       style={{

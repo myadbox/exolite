@@ -1,1 +1,1 @@
-console.log(`this is a lib`)
+console.log("this is a lib")

@@ -6,7 +6,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "baseUrl": "./",
-    "paths": { "@/*": ["./src/*"] },
+    "paths": {"@/*": ["./src/*"]},
     "resolveJsonModule": true,
     "allowJs": true,
     "outDir": "./built",
