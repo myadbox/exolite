@@ -7,6 +7,7 @@ import page from './pages/001/data/values.mjs'
 const isMultipage = false
 const Wrapper = isMultipage ? CornerFold : React.Fragment
 
+/** @type ExoTemplate */
 const Template = (props) => {
   return (
     <Wrapper to="/?page=001">
