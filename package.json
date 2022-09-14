@@ -29,7 +29,7 @@
   "devDependencies": {
     "@myadbox/eslint-config-exoplanet": "^1.0.5",
     "@myadbox/exoplanet-deployment": "^0.1.12",
-    "@myadbox/nebula-template-utils": "^0.0.76",
+    "@myadbox/nebula-template-utils": "^0.0.78",
     "@myadbox/prettier-config-exoplanet": "^1.0.4",
     "@types/node": "^18.7.6",
     "@types/react": "^17.0.39",
