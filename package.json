@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "dev": "vite",
     "build": "deploy",
-    "setup": "npm install && node --experimental-json-modules dev/rename.mjs && npm run update-eslint",
+    "setup": "npm install && node dev/rename.mjs && npm run update-eslint",
     "update-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet"
   },
   "engines": {

@@ -4,7 +4,11 @@
 // This script is used to change the name property of the package.json file to the parent directory name.
 
 import replace from 'replace'
-import packageJson from '../package.json'
+import {createRequire} from 'module'
+// @ts-ignore
+const require = createRequire(import.meta.url)
+
+const packageJson = require(`../package.json`)
 
 const exoliteName = `@myadbox/exolite`
 const name = packageJson.name
@@ -13,7 +17,7 @@ if (name !== exoliteName) {
   process.exit(0)
 }
 
-const newName = process.cwd().split('/').pop()
+const newName = process.cwd().split(`/`).pop()
 
 replace({
   regex: `"name": "${name}"`,
