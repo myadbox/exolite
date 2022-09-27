@@ -17,7 +17,7 @@ if (name !== exoliteName) {
   process.exit(0)
 }
 
-const newName = process.cwd().split(`/`).pop()
+const newName = process.cwd().split(`/`).pop().toLowerCase()
 
 replace({
   regex: `"name": "${name}"`,
