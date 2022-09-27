@@ -50,5 +50,10 @@
     "src/animation/lib/**/*",
     "node_modules",
     "dist"
-  ]
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  }
 }
