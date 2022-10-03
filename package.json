@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "deploy",
     "setup": "npm install && node dev/rename.mjs && npm run update-eslint",
-    "update-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet"
+    "update-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet",
+    "update-name": "node dev/rename.mjs --force"
   },
   "engines": {
     "node": ">=16.0"

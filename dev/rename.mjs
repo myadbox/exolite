@@ -11,10 +11,12 @@ const require = createRequire(import.meta.url)
 const packageJson = require(`../package.json`)
 
 const exoliteName = `@myadbox/exolite`
-const exoliteTitle = `Sesimi template development`
 const name = packageJson.name
 
-if (name !== exoliteName) {
+const [, , ...args] = process.argv
+const force = args.includes(`--force`)
+
+if (name !== exoliteName && !force) {
   process.exit(0)
 }
 
@@ -29,7 +31,7 @@ replace({
 })
 
 replace({
-  regex: `<title>${exoliteTitle}</title>`,
+  regex: /<title>[^<]*<\/title>/,
   replacement: `<title>${newName}</title>`,
   paths: [`./index.html`],
   recursive: false,

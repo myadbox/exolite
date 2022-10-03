@@ -16,8 +16,8 @@ const mount = ({default: Template}) => {
 }
 
 if (pageRequest) {
-  // NOTE: import arg can not be an expression or solely a variable, because Webpack.
-  // https://webpack.js.org/api/module-methods/#dynamic-expressions-in-import
+  // NOTE: variables in dynamic import arg can only represent filenames one level deep.
+  // https://vitejs.dev/guide/features.html#dynamic-import
   import(`../src/pages/${pageRequest}/index.jsx`).then(mount)
 } else {
   import(`../src/index.jsx`).then(mount)
