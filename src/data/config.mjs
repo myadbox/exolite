@@ -1,3 +1,4 @@
+// @ts-check
 import {allFormats, allSizes, defineConfig, embedSizes} from '@myadbox/nebula-template-utils'
 
 export default defineConfig({
