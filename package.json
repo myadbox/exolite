@@ -1,7 +1,7 @@
 {
   "name": "@myadbox/exolite",
   "private": true,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "author": "Sesimi R&D",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -24,12 +24,12 @@
     "url": "https://github.com/myadbox/exolite/issues"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.17",
+    "@myadbox/exoplanet-toolkit": "^1.0.18",
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
     "@myadbox/eslint-config-exoplanet": "^1.0.7",
-    "@myadbox/exoplanet-deployment": "^0.1.13",
+    "@myadbox/exoplanet-deployment": "^0.1.14",
     "@myadbox/nebula-template-utils": "^0.0.85",
     "@myadbox/prettier-config-exoplanet": "^1.0.5",
     "@types/node": "^18.7.6",
