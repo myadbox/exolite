@@ -24,7 +24,7 @@
     "url": "https://github.com/myadbox/exolite/issues"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.18",
+    "@myadbox/exoplanet-toolkit": "^1.0.19",
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
