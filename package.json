@@ -1,7 +1,7 @@
 {
   "name": "@myadbox/exolite",
   "private": true,
-  "version": "0.0.13",
+  "version": "0.0.14",
   "type": "module",
   "author": "Sesimi R&D",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -24,7 +24,7 @@
     "url": "https://github.com/myadbox/exolite/issues"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.19",
+    "@myadbox/exoplanet-toolkit": "^1.0.20",
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
