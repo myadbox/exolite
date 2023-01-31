@@ -1,17 +1,17 @@
 {
   "name": "@myadbox/exolite",
   "private": true,
-  "version": "0.0.15",
+  "version": "0.1.0",
   "type": "module",
   "author": "Sesimi R&D",
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "start": "npm run dev",
     "dev": "vite",
-    "build": "deploy",
-    "setup": "npm install && node dev/rename.mjs && npm run update-eslint",
-    "update-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet",
-    "update-name": "node dev/rename.mjs --force"
+    "build": "bundle || true && deploy",
+    "setup": "npm install && rename && npm run install-eslint",
+    "install-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet",
+    "install-remotion": "npm i --save --save-exact remotion@3.2.12 && npm i --save-dev --save-exact @remotion/player@3.2.12 @myadbox/remotion-bundler"
   },
   "engines": {
     "node": ">=16.0"
@@ -24,12 +24,12 @@
     "url": "https://github.com/myadbox/exolite/issues"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.20",
+    "@myadbox/exoplanet-toolkit": "^1.0.21",
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
     "@myadbox/eslint-config-exoplanet": "^1.1.0",
-    "@myadbox/exoplanet-deployment": "^0.1.15",
+    "@myadbox/exoplanet-deployment": "^0.1.17",
     "@myadbox/nebula-template-utils": "^0.0.94",
     "@myadbox/prettier-config-exoplanet": "^1.0.5",
     "@types/node": "^18.7.6",
@@ -39,7 +39,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "replace": "^1.2.1",
-    "typescript": "^4.8.3",
+    "typescript": "^4.8.4",
     "vite": "^3.0.6"
   },
   "prettier": "@myadbox/prettier-config-exoplanet",
