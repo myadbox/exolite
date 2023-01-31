@@ -9,9 +9,9 @@
     "start": "npm run dev",
     "dev": "vite",
     "build": "bundle || true && deploy",
-    "setup": "npm install && rename && npm run install-eslint",
-    "install-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet",
-    "install-remotion": "npm i --save --save-exact remotion@3.2.12 && npm i --save-dev --save-exact @remotion/player@3.2.12 @myadbox/remotion-bundler"
+    "setup": "npm install && rename && npm run add-eslint",
+    "add-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet",
+    "add-remotion": "npm i --save --save-exact remotion@3.2.12 && npm i --save-dev --save-exact @remotion/player@3.2.12 @myadbox/remotion-bundler"
   },
   "engines": {
     "node": ">=16.0"
