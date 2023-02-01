@@ -1,4 +1,3 @@
-// @ts-check
 import * as React from 'react'
 import {Player} from '@remotion/player'
 import {Main} from '../components/Main'
