@@ -1,7 +1,9 @@
 import * as React from 'react'
 import {Player} from '@remotion/player'
 import {Main} from '../components/Main'
-import {hdVideo} from './utils.mjs'
+import {allSizes} from '@myadbox/nebula-template-utils'
+
+const {width, height} = allSizes.video.screen.sizes.hd
 
 export const Preview = (props) => {
   return (
@@ -10,8 +12,8 @@ export const Preview = (props) => {
       key="player"
       component={Main}
       durationInFrames={360} // durationInFrames = video duration * fps
-      compositionWidth={hdVideo.width as number}
-      compositionHeight={hdVideo.height as number}
+      compositionWidth={width as number}
+      compositionHeight={height as number}
       moveToBeginningWhenEnded={false}
       fps={24}
       inputProps={props}

@@ -1,8 +1,10 @@
 import * as React from 'react'
 import {Composition} from 'remotion'
 import {Main} from '../components/Main'
-import {hdVideo} from './utils.mjs'
 import defaultValues from '../pages/001/data/values.mjs'
+import {allSizes} from '@myadbox/nebula-template-utils'
+
+const {width, height} = allSizes.video.screen.sizes.hd
 
 // bring in minified css after previous bundling step
 import '../../dist/template/index.css'
@@ -14,8 +16,8 @@ export const RemotionVideo: React.FC = () => {
       component={Main}
       durationInFrames={360} // durationInFrames = video duration * fps
       fps={24}
-      width={hdVideo.width as number}
-      height={hdVideo.height as number}
+      width={width as number}
+      height={height as number}
       defaultProps={{page: defaultValues}}
     />
   )
