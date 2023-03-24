@@ -12,7 +12,11 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": ["./src/**/*", "./dev/**/*", "./vite.config.ts"],
   "exclude": ["node_modules", "./dist"]
