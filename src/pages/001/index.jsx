@@ -3,8 +3,8 @@
 
 import * as React from 'react'
 import {Body, useTemplate /*, useAnimation*/} from '@myadbox/exoplanet-toolkit'
-import page from './data/values.mjs'
 import reactLogo from '../../img/react.svg'
+import page from './data/values.mjs'
 import Title from '../../components/Title/Title'
 import Wrapper from '../../components/Wrapper/Wrapper'
 

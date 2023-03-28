@@ -1,4 +1,6 @@
-/* Add your CSS below, or use any CSS methodology you like, as long as it compiles to a static src/index.css file */
+/* This file is the only one that will be processed correctly at build-time. Add your Scss or CSS here, or import it into here from elsewhere. An example follows… */
+
+@import 'components/Wrapper/index.css';
 
 /* Example of linking to a local font file: */
 // @font-face {
@@ -11,16 +13,24 @@
 /* Or you may use Google Fonts directly from their server like this: */
 // @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 
-/* Example styles… */
+/* To use Tailwind, uncomment the following lines: */
+// @tailwind base;
+// // add custom CSS here if necessary. After tailwind base, before tailwind components and utilities.
+// @tailwind components;
+// @tailwind utilities;
 
+
+/* Demo styles only… */
 /*! purgecss start ignore */
 :root {
-  --electric-lime: #d1ff3b;
+  $electric-lime-var: #d1ff3b;
+  --electric-lime: #{$electric-lime-var};
   --midnight-forest: #03292d;
 
   font-family: Avenir, sans-serif;
   line-height: 1.3;
   font-size: 0.75rem;
+  /* Using fluid font-size techniques greatly simplifies responsive design… */
   font-size: clamp(0.75rem, 1.5vmax, 2rem);
 }
 
@@ -35,5 +45,3 @@ h1 {
   letter-spacing: -0.02em;
 }
 /*! purgecss end ignore */
-
-@import 'components/Wrapper/index.css';

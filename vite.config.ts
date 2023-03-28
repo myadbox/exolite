@@ -1,20 +1,4 @@
-import {defineConfig} from 'vite'
-import react from '@vitejs/plugin-react'
+import {viteConfig} from '@myadbox/exoplanet-deployment'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    open: `/?page=001`,
-  },
-  resolve: {
-    extensions: [`.mjs`, `.js`, `.ts`, `.jsx`, `.tsx`, `.json`],
-    alias: {
-      TEMPLATE: `/src`,
-      '@/': `src/`,
-    },
-  },
-  optimizeDeps: {
-    exclude: [`@myadbox/exoplanet-toolkit`],
-  },
-})
+export default viteConfig
