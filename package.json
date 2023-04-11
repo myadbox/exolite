@@ -1,7 +1,7 @@
 {
   "name": "@myadbox/exolite",
   "private": true,
-  "version": "0.2.2",
+  "version": "0.3.0",
   "type": "module",
   "author": "Sesimi R&D",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -10,7 +10,7 @@
     "dev": "vite",
     "clean": "rm -rf dist",
     "vite:build": "vite build",
-    "build": "npm run clean && npm run vite:build && bundle-exolite-remotion || true && deploy-exolite-to-zip",
+    "build": "npm run clean && build-exolite && npm run vite:build && bundle-exolite-remotion || true && zip-exolite",
     "setup": "npm install && rename-project-to-dir && npm run add-eslint",
     "add-eslint": "npx install-peerdeps --dev @myadbox/eslint-config-exoplanet",
     "add-remotion": "npm i --save --save-exact remotion@3.3.54 && npm i --save-dev --save-exact @remotion/player@3.3.54 @myadbox/remotion-bundler@2"
@@ -26,12 +26,12 @@
     "url": "https://github.com/myadbox/exolite/issues"
   },
   "dependencies": {
-    "@myadbox/exoplanet-toolkit": "^1.0.22",
+    "@myadbox/exoplanet-toolkit": "^1.0.23",
     "lazysizes": "^5.3.2"
   },
   "devDependencies": {
     "@myadbox/eslint-config-exoplanet": "^1.1.0",
-    "@myadbox/exoplanet-deployment": "^2.0.2",
+    "@myadbox/exoplanet-deployment": "^2.1.0",
     "@myadbox/nebula-template-utils": "^0.2.1",
     "@myadbox/prettier-config-exoplanet": "^1.0.6",
     "react": "^17.0.2",
