@@ -1,7 +1,7 @@
 {
   "name": "@myadbox/exolite",
   "private": true,
-  "version": "0.3.7",
+  "version": "0.3.8",
   "type": "module",
   "author": "Sesimi R&D",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@myadbox/eslint-config-exoplanet": "^1.1.0",
     "@myadbox/exoplanet-deployment": "^2.1.4",
-    "@myadbox/nebula-template-utils": "^0.4.0",
+    "@myadbox/nebula-template-utils": "^0.4.2",
     "@myadbox/prettier-config-exoplanet": "^1.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
